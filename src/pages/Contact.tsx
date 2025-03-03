@@ -1,6 +1,5 @@
-
 import { useEffect, useRef } from 'react';
-import { Mail, MapPin, Phone, Clock, Linkedin, Twitter, GitHub } from 'lucide-react';
+import { Mail, MapPin, Phone, Clock, Linkedin, Twitter, Github } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ContactForm from '../components/ContactForm';
@@ -103,7 +102,7 @@ const Contact = () => {
                       <Twitter size={24} className="text-foreground hover:text-primary transition-colors" />
                     </a>
                     <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="social-icon">
-                      <GitHub size={24} className="text-foreground hover:text-primary transition-colors" />
+                      <Github size={24} className="text-foreground hover:text-primary transition-colors" />
                     </a>
                   </div>
                 </div>
