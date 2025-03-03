@@ -1,13 +1,12 @@
 
 import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Linkedin, Github, Twitter } from 'lucide-react';
+import { ArrowRight, Linkedin, Github, Twitter, MessageSquare } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import SectionHeader from '../components/SectionHeader';
 import ProjectCard from '../components/ProjectCard';
 import VideoCard from '../components/VideoCard';
-import ContactForm from '../components/ContactForm';
 
 const Index = () => {
   const profileImageUrl = "/lovable-uploads/48f4fa5a-9496-4a42-b8cb-695b744c45a8.png"; 
@@ -204,10 +203,21 @@ const Index = () => {
                 <p className="text-gray-300 max-w-md mb-8 text-sm">
                   Let's chat about collaborations, opportunities, or anything design related!
                 </p>
+                
+                <Link 
+                  to="/contact" 
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[#444] rounded-md hover:bg-opacity-90 transition-all font-medium"
+                >
+                  <MessageSquare size={20} />
+                  Let's Chat
+                </Link>
               </div>
               
-              <div>
-                <ContactForm />
+              <div className="hidden md:block">
+                <div className="relative h-full flex items-center justify-center">
+                  <div className="absolute w-64 h-64 bg-white/5 rounded-full -left-20"></div>
+                  <div className="absolute w-40 h-40 bg-white/5 rounded-full right-10 top-10"></div>
+                </div>
               </div>
             </div>
           </div>
