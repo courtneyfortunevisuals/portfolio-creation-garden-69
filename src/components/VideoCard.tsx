@@ -42,7 +42,7 @@ const VideoCard = ({ title, subtitle, thumbnailUrl, videoUrl, index }: VideoCard
 
   return (
     <div ref={cardRef} className="section-transition">
-      <div className="group relative overflow-hidden rounded-none aspect-video mb-4 bg-[#f0f0f0]">
+      <div className="group relative overflow-hidden rounded-lg aspect-video mb-4 bg-[#f0f0f0]">
         <img 
           src={thumbnailUrl} 
           alt={title} 

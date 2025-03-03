@@ -53,7 +53,7 @@ const ProjectCard = ({ title, category, imageUrl, gradient, href, index }: Proje
           <img 
             src={imageUrl} 
             alt={title} 
-            className="project-image w-full h-full object-cover"
+            className="project-image w-full h-full object-cover rounded-lg"
           />
         </div>
         <div className="pt-4">
