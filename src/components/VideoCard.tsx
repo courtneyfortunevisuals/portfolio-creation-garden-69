@@ -42,21 +42,21 @@ const VideoCard = ({ title, subtitle, thumbnailUrl, videoUrl, index }: VideoCard
 
   return (
     <div ref={cardRef} className="section-transition">
-      <div className="group relative overflow-hidden rounded-lg aspect-video mb-4">
+      <div className="group relative overflow-hidden rounded-none aspect-video mb-4 bg-[#f0f0f0]">
         <img 
           src={thumbnailUrl} 
           alt={title} 
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center transform scale-90 group-hover:scale-100 transition-transform duration-300">
-            <Play size={24} className="ml-1" />
+          <div className="w-12 h-12 rounded-full bg-white/90 flex items-center justify-center transform scale-90 group-hover:scale-100 transition-transform duration-300">
+            <Play size={20} className="ml-1" />
           </div>
         </div>
       </div>
       <Link to={videoUrl}>
-        <h3 className="font-display text-lg font-medium tracking-tight">{title}</h3>
-        <p className="text-sm text-muted-foreground mt-1">{subtitle}</p>
+        <h3 className="font-display text-base font-medium tracking-tight text-[#333]">{title}</h3>
+        <p className="text-xs text-[#666] mt-1">{subtitle}</p>
       </Link>
     </div>
   );

@@ -34,12 +34,12 @@ const SectionHeader = ({ title, subtitle }: SectionHeaderProps) => {
   }, []);
 
   return (
-    <div ref={headerRef} className="section-transition mb-12">
-      <h2 className="font-display text-3xl md:text-4xl font-semibold tracking-tight mb-4">
+    <div ref={headerRef} className="section-transition mb-10">
+      <h2 className="font-display text-2xl font-medium tracking-tight mb-3 text-[#333]">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-muted-foreground max-w-2xl">{subtitle}</p>
+        <p className="text-[#666] max-w-xl text-sm">{subtitle}</p>
       )}
     </div>
   );

@@ -44,7 +44,7 @@ const ProjectCard = ({ title, category, imageUrl, gradient, href, index }: Proje
   return (
     <div 
       ref={cardRef} 
-      className="section-transition project-card rounded-lg overflow-hidden group"
+      className="section-transition project-card rounded-none overflow-hidden group"
     >
       <Link to={href} className="block h-full">
         <div 
@@ -56,15 +56,9 @@ const ProjectCard = ({ title, category, imageUrl, gradient, href, index }: Proje
             className="project-image w-full h-full object-cover"
           />
         </div>
-        <div className="p-5">
-          <div className="flex items-center justify-between mb-2">
-            <h3 className="font-display text-xl font-medium tracking-tight">{title}</h3>
-            <ArrowRight 
-              size={20} 
-              className="opacity-0 -translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" 
-            />
-          </div>
-          <p className="text-sm text-muted-foreground">{category}</p>
+        <div className="pt-4">
+          <h3 className="font-display text-base font-medium tracking-tight text-[#333]">{title}</h3>
+          <p className="text-xs text-[#666] mt-1">{category}</p>
         </div>
       </Link>
     </div>
